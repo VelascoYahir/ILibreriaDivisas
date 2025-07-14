@@ -29,12 +29,12 @@
 ## Uso
 
 ```java
-import com.miempresa.divisas.ConversorDivisas;
+import ilibreriadivisas.ConversorDivisas;
 
 public class Main {
     public static void main(String[] args) {
         ConversorDivisas conversor = new ConversorDivisas();
-        double resultado = conversor.convertir("USD", "EUR", 100.0);
+        double resultado = conversor.convertir("USD", "EUR");
         System.out.println("Resultado: " + resultado + " EUR");
     }
 }
@@ -42,7 +42,7 @@ public class Main {
 
 ## Funcionalidades
 
-- `convertir(String monedaOrigen, String monedaDestino, double monto)`: Realiza la conversión entre dos monedas.
+- `convertir(String monedaOrigen, String monedaDestino)`: Realiza la conversión entre dos monedas.
 - Manejo automático de errores en caso de que la API esté fuera de servicio o las divisas no sean válidas.
 - Formateo de resultados con dos decimales.
 
@@ -58,3 +58,4 @@ public class Main {
 ## Licencia
 
 Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.
+![alt text](image.png)
