@@ -7,6 +7,8 @@ Puedes consultar la documentación Javadoc generada en la carpeta `dist/javadoc/
 
 ## ¿Cómo usar esta librería?
 ```java
+
+//Obtiene todos los simbolos monetarios que soporta la API de Frankfurter
  public void cargarDivisas() {
         try {
             String[] divisas = ConversorDivisas.simboloMonetario();
@@ -25,8 +27,17 @@ Puedes consultar la documentación Javadoc generada en la carpeta `dist/javadoc/
     }
 
 
+//convierte la divisa origen a una divisa destino
  public double convertir(double monto) throws Exception {
         String origen = this.cmbDivOrigen.getSelectedItem().toString();
         String destino = this.cmbDivOrigen.getSelectedItem().toString();
+        return ConversorDivisas.origenaDestino(origen, destino);
+    }
+
+
+
+// Obtiene la tasa de conversión
+    private double obtenerTasaConversion(String origen, String destino) throws Exception {
+        if (origen.equals(destino)) return 1.0;
         return ConversorDivisas.origenaDestino(origen, destino);
     }
