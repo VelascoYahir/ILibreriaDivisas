@@ -59,3 +59,8 @@ public class Main {
 
 Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.
 ![alt text](image.png)
+
+
+## Link video de explicacion en YouTube
+
+https://youtu.be/47cZp_ZusNw?si=RTFvOAnn2O2eSQ8y
