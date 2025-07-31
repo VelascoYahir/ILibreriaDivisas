@@ -48,7 +48,7 @@ public class Main {
 }
 
 
-Este metodo obtiene la tarifa actual de una moneda a otra y es el que hace que el componente vizual funcione
+Este metodo obtiene la tarifa actual de una moneda a otra y es el que hace que el componente vizual funcione.
 
 public static double origenaDestino(String Base, String Destino){
         
