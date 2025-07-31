@@ -48,7 +48,7 @@ public class Main {
 }
 
 
-
+Este metodo obtiene la tarifa actual de una moneda a otra
 public static double origenaDestino(String Base, String Destino){
         
          double tarifadestino = 0.0;   
